@@ -13,8 +13,8 @@ $(function () {
         for(var i=0;i<data.photos.length;i++){
             
             var row = 
-            '<div class="row">' + 
-            '<div class="col><img src=' + data.photos[i] + ' class="detail" /></div>' +            
+            '<div class="row carousel-inner">' + 
+            '<div class="col center carousel-item active"><img src=' + data.photos[i] + ' class="detail"></div>' +            
             '</div>';
             $('#gallery').append(row);
         }
