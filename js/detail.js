@@ -12,12 +12,80 @@ $(function () {
         $('#phone').html(data.phone);
         for(var i=0;i<data.photos.length;i++){
             
-            var row = 
-            '<div class="row carousel-inner">' + 
-            '<div class="col center carousel-item active"><img src=' + data.photos[i] + ' class="detail"></div>' +            
-            '</div>';
-            $('#gallery').append(row);
+            if (i === 0) {
+                var row = 
+                    ' <div class="carousel-item active">' +
+                        '<img src=' + data.photos[i] + ' class="d-block w-100 photo detail" alt="First slide" />'+
+                    '</div>';
+                console.log(row)
+                }else{
+                var row = 
+                    ' <div class="carousel-item">' +
+                        '<img src=' + data.photos[i] + ' class="d-block w-100 photo detail" alt="First slide" />'+
+                    '</div>';
+                console.log(row)
+                }
+                $('#target').append(row);
+            }
+        var num = Math.round(data.rating);
+        if (num === 0) {
+            var numrating = 
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>';
+            $('#rating').html(numrating);
+        }else if (num === 1) {
+            var numrating = 
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>';
+            $('#rating').html(numrating);
+        }else if (num === 2) {
+            var numrating = 
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>';
+            $('#rating').html(numrating);
+        }else if (num === 3) {
+            var numrating = 
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star"></span>'+
+            '<span class="fa fa-star"></span>';
+            $('#rating').html(numrating);
+        }else if (num === 4) {
+            var numrating = 
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star"></span>';
+            $('#rating').html(numrating);
+        }else if (num === 5) {
+            var numrating = 
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>'+
+            '<span class="fa fa-star checked"></span>';
+            $('#rating').html(numrating);
         }
+
+        if (data.open_now === true) {
+            $('#opennow').html("เปิด");
+            $('#opennow').css("color", "green"); 
+        }else{
+            $('#opennow').html("ปิด!");
+            $('#opennow').css("color", "red");  
+        }
+
     });
 
 
