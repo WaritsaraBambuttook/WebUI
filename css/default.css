@@ -15,11 +15,7 @@
     font-size: 20px;
 }
 .search{
-    background: #ff6666; 
-    background: -webkit-linear-gradient(#ff6666, #ff9999 ,#ffcccc);
-    background: -o-linear-gradient(#ff6666, #ff9999 ,#ffcccc); 
-    background: -moz-linear-gradient(#ff6666, #ff9999 ,#ffcccc); 
-    background: linear-gradient(#ff6666, #ff9999 ,#ffcccc);
+    background: #ff6666;
 }
 
 .welcome{
@@ -53,7 +49,7 @@
     border: 2px solid rgb(160, 5, 65);
 }
 .tapbar{
-   background-color:rgb(187, 8, 17);
+   background-color:rgb(187, 154, 8);
 }
 .imgabout{
     width: 500px;
@@ -70,4 +66,7 @@
     margin-left: 0;
     border-width: .2rem; 
     }
+}
+.about{
+    background-color: rgba(240, 236, 47, 0.904);
 }
