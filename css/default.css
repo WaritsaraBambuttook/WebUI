@@ -69,4 +69,5 @@
 }
 .about{
     background-image: url("img/bgabout.jpg");
+    background-repeat: no-repeat;
 }
