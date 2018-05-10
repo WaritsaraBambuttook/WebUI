@@ -7,8 +7,8 @@ $(function () {
         PlaceSearch.Search(keyword, type, radius).then(function(data){
             for(var i=0;i<data.length;i++){
                 var row = 
-                '<a class="searchJS" href="detail.html?placeid=' + data[i].id + '">'+'<br><br>' + 
-                '<div class="row">' + 
+                '<a class="searchJS" href="detail.html?placeid=' + data[i].id + '">'+'<br>'+
+                '<div class="row borderresult">' + 
                     '<div class="col"><img src=' + data[i].photo + ' class="thumbnail" /></div>' +
                 '<div class="col">' + data[i].name + '</div>' +
                 '<div class="col">' + data[i].rating + '</div>' +

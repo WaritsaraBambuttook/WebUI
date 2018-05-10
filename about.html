@@ -10,34 +10,71 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-</head>
+
+        <link rel="stylesheet" href="css/default.css">
+
+    </head>
 
 <body>
 
-    
-        <nav class="navbar navbar-expand-sm|md|lg|-xl navbar-light bg-secondary">
-                <a class="navbar-brand" href="index.html">Wongnok</a>
-                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="search.html">Search</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                        </li>                
-                </div>
-            </nav>
+
+    <nav class="navbar navbar-expand-sm|md|lg|-xl navbar-light bg-secondary">
+        <a class="navbar-brand" href="index.html">Wongnok</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
         <h1 class="display-3">About</h1>
-        <p class="lead">[Your name and ID]</p>
+
+        <div class="imgabout">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-thumbnail" src="img/four.jpg" alt="First slide Cinque Terre">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-thumbnail" src="img/four1.jpg" alt="Second slide Cinque Terre">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-thumbnail" src="img/four2.jpg" alt="Third slide Cinque Terre">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -48,7 +85,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
     <script src="js/placesearch.js"></script>
-    <script src="js/index.js"></script>        
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -49,3 +49,25 @@
     margin-top: 10px;
     text-align: center;
 }
+.borderresult{
+    border: 2px solid rgb(160, 5, 65);
+}
+.tapbar{
+   background-color:rgb(187, 8, 17);
+}
+.imgabout{
+    width: 500px;
+    padding: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: .2rem;   
+}
+@media only screen and (max-width: 600px) {
+    .imgabout{
+    width: 300px;
+    padding: 2rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem; 
+    }
+}
